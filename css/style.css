@@ -18,13 +18,15 @@ header{
 
  
  
- .naviga   {
+ .naviga {
     height: 20%;
     width: 50%;
     background-color:#D4A520;
     color: aliceblue;
     margin: auto ;
     display: flex;
+    justify-content: space-between;
+    
 {
         
 .login{

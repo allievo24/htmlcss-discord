@@ -2,71 +2,84 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} 
+}
 
+body{
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+/*inizio stilizazione header con l inserimento del immagine
+con url e il suo dimensionamento con  contain*/
 header{
     background-color:#ADD8E6;
     padding-top: 20px;
-    
-
 }
 
 .container-header{
     margin-bottom: 20px;
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
 }
-
- 
 
  .naviga {
     height: 30%;
     width: 80%;
-    background-color: #D4A520;
-    color: aliceblue;
     margin: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
     align-items: center;
-    
  }
+
  nav{
      border: dotted;
  }
-        
- 
-    
-  
-    
 
 .login{
     text-align: right;
     padding: 10px;
     background-color: #5CB7F2;
     border-radius:40px;
-    
-  
-
-  
 }
+
+span{
+    background-color: #5CB7F2;
+    border-radius:10px;
+    font-size:  15px;
+    padding:  5px;
+    margin: 10px   ;
+    color: white;
+    height: 20px; 
+}
+
+
+
+
+
+
  
-
-
 .sezione1 {
     display: flex;
-    height: 300px; ;
-    background-color:#00008B ;
+    height: 300px; ; 
     justify-content: center;
     border: 2px dotted;
+              
 }
+       
 .sezione1 div{
     width: 500px;
     border: 2px dotted black;
-    background-color: #EE82EE;
+    background-color: #FFC0CB;
     height: 250px;
     margin: auto;
-    
+    text-align: center;
+       
 }
+
+
+
 
 
 .sezione2,.sezione4{
@@ -76,7 +89,31 @@ header{
     flex-direction: row-reverse;
     margin-bottom:5% ; 
 }
+/* regole per dare dimensione all`immagini*/
+.sezione2 .right img{
+    height: 100%;
+    width: 100%;  
+}
+.sezione3 .right img{
+    height: 100%;
+    width: 100%;  
+}
 
+.sezione4 .right img{
+    height: 100%;
+    width: 100%;  
+}
+.sezione5 .centrale img{
+   
+    height: 100%;
+    width: 100%;  
+}
+     
+
+
+
+   
+   
 
 
 .sezione3 {
@@ -93,13 +130,13 @@ header{
 .sezione5{
     background-color:#D3D3D3 ;
     width: 100%;
-    height: 300px;
+    
     padding: 30px;
 }
  
 
 .left{
-     width: 20%;
+     width: 25%;
      height: 300px;
      background-color: #FFC0CB;
      border: dotted black;
@@ -113,7 +150,7 @@ header{
 
 .centrale {
     height: 100%;
-    width: 50%;
+    width: 80%;
     background-color:#228B22 ;
     border: dotted black;
     margin: auto;
@@ -133,14 +170,27 @@ footer{
   
 .col1  {
     width: 30%;
-    height: 300px;
+   /* height: 300px; da eliminare dopo l ìnserimento del contenuto
+   altrementi straborda */
     background-color: #F08080;
     border: 2px dotted black ;
 
 }
+
+.Italia img{
+    width: 20px;
+}
+.Italia{
+   font-size: x-small;
+   margin-bottom: 10px; 
+}
+
+
+
+
 .footer-top .col  {
     width: calc(70% / 4);
-    height: 300px;
+    
     background-color: #20B2AA;
     border: 2px dotted white ; 
 }
@@ -157,5 +207,19 @@ footer{
     border:  dotted black;
     width: 10%;
 }
+/*regole di stile per le liste presenti nelle colonne*/
+li{
+    margin-top: 10px;
+    list-style: none;
+}
  
-
+ul>li{
+    color: #1E90FF;
+}
+.items{
+    color: aliceblue;
+    
+}
+i{
+    margin-right: 10px;
+}
